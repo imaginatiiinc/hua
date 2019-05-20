@@ -520,10 +520,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
+	border: 0px solid;
 	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
+	border-radius: 0px;
+	background: #F2A244;
 	color: rgba(0, 0, 0, 0.8);
 	font-size: 12px;
 	font-size: 0.75rem;
@@ -535,6 +535,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
+	background: #E7204E;
 	border-color: #ccc #bbb #aaa;
 }
 
@@ -565,8 +566,8 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border: 0px solid #ccc;
+	border-radius: 0;
 	padding: 3px;
 }
 
