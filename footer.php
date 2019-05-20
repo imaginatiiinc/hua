@@ -13,19 +13,43 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer">  
+             
+<aside id="footer-sidebar" class="secondary">
+<div id="footer-sidebar1">
+<?php
+if(is_active_sidebar('footer-sidebar-1')){
+dynamic_sidebar('footer-sidebar-1');
+}
+?>
+</div>
+<div id="footer-sidebar2">
+<?php
+if(is_active_sidebar('footer-sidebar-2')){
+dynamic_sidebar('footer-sidebar-2');
+}
+?>
+</div>
+<div id="footer-sidebar3">
+<?php
+if(is_active_sidebar('footer-sidebar-3')){
+dynamic_sidebar('footer-sidebar-3');
+}
+?>
+</div>
+<div id="footer-sidebar4">
+<?php
+if(is_active_sidebar('footer-sidebar-4')){
+dynamic_sidebar('footer-sidebar-4');
+}
+?>
+</div>
+</aside>
+            
+            
+            
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hua' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'hua' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'hua' ), 'hua', '<a href="http://imaginatii.com">Imaginatii</a>' );
-				?>
+			Hindu University of America &copy; <?php echo date("Y"); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
