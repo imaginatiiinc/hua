@@ -7,3 +7,56 @@ and open the template in the editor.
     Created on : May 20, 2019, 4:30:25 AM
     Author     : steph
 */
+
+
+.site-footer, .site-info {
+    background: #0A0A0A;
+    color: #fafafa;
+    line-height:1;
+}
+
+.site-footer {
+ 
+    width:100%;
+}
+#footer-sidebar {
+    max-width: 1180px;
+    margin:0 auto;
+}
+.site-info {
+    text-align: center; 
+    color:#999;
+}
+.site-footer a {
+    color:#eee;
+}
+
+.footercol {
+    width: map-get($columns, "4"); 
+    display:inline-block;
+    width:20.33%;
+    padding: 5% 1%;
+    vertical-align: top;
+}
+
+.footercol:first-child {
+    width:33%;
+    
+}
+
+.footercol ul {
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+
+.footercol li {
+    padding-bottom:1.5em;
+    
+}
+.footercol li a {
+    text-decoration: none;
+    font-size: 28;
+    
+}
+
