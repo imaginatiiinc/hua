@@ -49,7 +49,7 @@ dynamic_sidebar('footer-sidebar-4');
             
             
 		<div class="site-info">
-			Hindu University of America &copy; <?php echo date("Y"); ?>
+			Hindu University of America &copy; 1993-<?php echo date("Y"); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
