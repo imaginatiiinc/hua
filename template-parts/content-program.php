@@ -10,11 +10,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<?php hua_post_thumbnail(); ?>
+  <header class="entry-header" <?php if (has_post_thumbnail( $post->ID ) ): ?>
+          
+          <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+          style="background-image: url('<?php echo $image[0]; ?>');"  id="custom-bg" <?php endif; ?> >
+          <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+     
+  </header>
 
 	<div class="entry-content">
 		<?php
@@ -30,7 +32,7 @@
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
                     <h2>Courses In This Program</h2>
-                    <?php 
+                                            <?php 
 
 						/*
 						*  Query posts for a relationship value.
