@@ -17,11 +17,50 @@
 	<?php hua_post_thumbnail(); ?>
 
 	<div class="entry-content">
-                <?php if( get_field('credit_hours') ): ?>Credit Hours:<?php endif; ?> <?php the_field('credit_hours'); ?> 
-                <?php if( get_field('prerequisites') ): ?>Prerequisites:<?php endif; ?> <?php the_field('prerequisites'); ?> 
-                <?php if( get_field('instructor') ): ?>Instructor:<?php endif; ?> <?php the_field('instructor'); ?>
-                <?php if( get_field('course_code') ): ?>Course Code:<?php endif; ?> <?php the_field('course_code'); ?>  
+            
+            
+            <ul class="course-meta">
+            
+            
+                <?php if( get_field('credit_hours') ): ?><li>Credit Hours: <?php the_field('credit_hours'); ?></li> <?php endif; ?>
                 
+                <?php if( get_field('course_code') ): ?><li>Course Code: <?php the_field('course_code'); ?></li><?php endif; ?>
+                
+ 						<?php 
+
+						$prerequisite = get_field('prerequisites');
+
+						?>
+						<?php if( $prerequisite ): ?>
+							<li> Prerequisites: 
+                                                           
+							<?php foreach( $prerequisite as $prerequisites ): ?>
+								
+                                                                <a href="<?php echo get_permalink( $prerequisites->ID ); ?>"><?php echo get_the_title($prerequisites->ID ); ?></a>
+							<?php endforeach; ?>
+                                                           
+							</li>
+						<?php endif; ?>     
+                                                        
+                                                        
+ 						<?php 
+
+						$instructors = get_field('instructor');
+
+						?>
+						<?php if( $instructors ): ?>
+							<li> Instructor(s): 
+                                                           
+							<?php foreach( $instructors as $instructor ): ?>
+								
+                                                                <a href="<?php echo get_permalink( $instructor->ID ); ?>"><?php echo get_the_title($instructor->ID ); ?></a>
+							<?php endforeach; ?>
+                                                           
+							</li>
+						<?php endif; ?>    
+                
+                
+            </ul>
              <h2>Description</h2><?php the_excerpt(); ?>
 		<h2>Course Content</h2><?php
 		the_content();
