@@ -738,6 +738,33 @@ and open the template in the editor.
 	padding: 1em;
 }
 
+.site-title a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-decoration: none;
+	font-size: 30px;
+	padding-left: 0.5em;
+}
+
+@media only screen and (max-width: 610px) {
+	.site-branding {
+		display: block;
+		text-align: center;
+	}
+	.custom-logo {
+		margin: 0 auto;
+		width: 100px;
+	}
+	.site-title {
+		text-align: center;
+	}
+	.site-title a {
+		padding-left: 0;
+		font-size: 20px;
+	}
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
