@@ -386,7 +386,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -798,6 +798,13 @@ and open the template in the editor.
 .footercol li a {
 	text-decoration: none;
 	font-size: 28;
+}
+
+@media only screen and (max-width: 800px) {
+	.footercol {
+		width: 100%;
+		padding: 1% 1%;
+	}
 }
 
 /*--------------------------------------------------------------
