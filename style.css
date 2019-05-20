@@ -716,6 +716,40 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 20, 2019, 1:30:21 PM
+    Author     : steph
+*/
+.site-header {
+	background: linear-gradient(90deg, #280a41 0%, #651366 100%);
+}
+
+.site-branding {
+	display: -ms-flexbox;
+	display: flex;
+	padding: 1em;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 20, 2019, 4:30:25 AM
+    Author     : steph
+*/
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
