@@ -19,7 +19,7 @@ and open the template in the editor.
     padding: 0 1em;
     list-style: none;
 }
-.course-meta:before { 
+.course-meta li:before { 
     content: "";
     border-color: transparent #111;
     border-style: solid;
