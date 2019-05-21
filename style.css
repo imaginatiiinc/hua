@@ -766,6 +766,83 @@ and open the template in the editor.
 }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 21, 2019, 1:22:26 AM
+    Author     : steph
+*/
+.site-content {
+	background: #F7CB8A;
+}
+
+.entry-content {
+	background: #F7EEE2;
+	padding: 3em;
+	width: 60%;
+}
+
+#secondary {
+	background: #280A41;
+	color: #fff;
+	width: 30%;
+	padding: 3em;
+}
+
+#custom-bg {
+	height: 80vh;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	background-size: cover;
+	background-position: center center;
+}
+
+#custom-bg h1 {
+	margin: 0;
+	padding: 1em;
+	width: auto;
+	background: #fafafacc;
+	color: #111;
+	border-radius: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 1em;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 21, 2019, 1:21:57 AM
+    Author     : steph
+*/
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 21, 2019, 1:22:06 AM
+    Author     : steph
+*/
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 /*
