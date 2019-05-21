@@ -846,6 +846,10 @@ and open the template in the editor.
     Created on : May 21, 2019, 1:22:06 AM
     Author     : steph
 */
+.single-course .entry-content {
+	margin: 3em auto;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
