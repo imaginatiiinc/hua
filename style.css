@@ -394,6 +394,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	color: #2D0B44;
 }
 
 p {
@@ -788,6 +789,15 @@ and open the template in the editor.
 	float: left;
 }
 
+.page-template-fullwidth .site-main {
+	width: 100%;
+	float: none;
+}
+
+.page-template-fullwidth .entry-title {
+	text-align: center;
+}
+
 #secondary {
 	width: 30%;
 	float: right;
@@ -823,6 +833,10 @@ and open the template in the editor.
 
 #secondary .button:hover {
 	background: #E7204E;
+}
+
+#secondary .widget-title {
+	color: #fff;
 }
 
 .entry-title {
@@ -999,6 +1013,10 @@ and open the template in the editor.
 .footercol li a {
 	text-decoration: none;
 	font-size: 28;
+}
+
+.site-footer h3 {
+	color: #fff;
 }
 
 @media only screen and (max-width: 800px) {
