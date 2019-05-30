@@ -459,7 +459,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: #F7CB8A;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -778,13 +778,61 @@ and open the template in the editor.
     Author     : steph
 */
 .site-content {
-	background: #F7CB8A;
+	max-width: 1500px;
+	margin: 0 auto 2% auto;
+	width: 95%;
+}
+
+.site-main {
+	width: 66%;
+	float: left;
+}
+
+#secondary {
+	width: 30%;
+	float: right;
+	margin: 1.5%;
+}
+
+#secondary .widget-title {
+	text-transform: uppercase;
+}
+
+#secondary ul {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+#secondary ul a {
+	text-decoration: none;
+}
+
+#secondary .button {
+	background: #F2A244;
+	color: rgba(0, 0, 0, 0.8);
+	display: block;
+	width: 100%;
+	margin: 0.5em auto;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#secondary .button:hover {
+	background: #E7204E;
+}
+
+.entry-title {
+	margin-bototm: 0;
+	margin-top: 2em;
 }
 
 .entry-content {
 	background: #F7EEE2;
 	padding: 3em;
-	width: 60%;
 }
 
 #secondary {
@@ -808,6 +856,12 @@ and open the template in the editor.
 	    justify-content: center;
 	background-size: cover;
 	background-position: center center;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 }
 
 #custom-bg h1 {
@@ -820,6 +874,18 @@ and open the template in the editor.
 	text-transform: uppercase;
 	text-align: center;
 	margin: 1em;
+}
+
+@media screen and (max-width: 900px) {
+	.site-main {
+		width: 100%;
+		float: none;
+	}
+	#secondary {
+		width: 100%;
+		float: none;
+		margin: 0 0 2% 0;
+	}
 }
 
 /*--------------------------------------------------------------
