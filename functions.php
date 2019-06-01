@@ -212,3 +212,19 @@ if ( is_product() ) {
     }
 }
 add_action('loop_start', 'remove_gallery_and_product_images');
+
+/**
+* Change text strings
+*
+* @link http://codex.wordpress.org/Plugin_API/Filter_Reference/gettext
+*/
+ 
+function custom_related_products_text( $translated_text, $text, $domain ) {
+  switch ( $translated_text ) {
+    case 'Related products' :
+      $translated_text = __( 'Other courses you might like', 'woocommerce' );
+      break;
+  }
+  return $translated_text;
+}
+add_filter( 'gettext', 'custom_related_products_text', 20, 3 )
