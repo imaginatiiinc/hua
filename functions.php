@@ -198,3 +198,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * @snippet       Remove Zoom, Gallery @ Single Product Page
+ * @how-to        Watch tutorial @ https://businessbloomer.com/?p=19055
+ * @sourcecode    https://businessbloomer.com/?p=72911
+ * @author        Rodolfo Melogli
+ * @testedwith    WooCommerce 3.1.2
+ */
+ 
+add_action( 'after_setup_theme', 'bbloomer_remove_zoom_lightbox_theme_support', 99 );
+ 
+function bbloomer_remove_zoom_lightbox_theme_support() { 
+remove_theme_support( 'wc-product-gallery-zoom' );
+remove_theme_support( 'wc-product-gallery-lightbox' );
+remove_theme_support( 'wc-product-gallery-slider' );
+}
