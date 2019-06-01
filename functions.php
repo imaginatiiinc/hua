@@ -227,4 +227,3 @@ function custom_related_products_text( $translated_text, $text, $domain ) {
   }
   return $translated_text;
 }
-add_filter( 'gettext', 'custom_related_products_text', 20, 3 )
