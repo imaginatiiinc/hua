@@ -206,10 +206,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * @testedwith    WooCommerce 3.1.2
  */
  
-add_action( 'after_setup_theme', 'bbloomer_remove_zoom_lightbox_theme_support', 99 );
- 
-function bbloomer_remove_zoom_lightbox_theme_support() { 
-remove_theme_support( 'wc-product-gallery-zoom' );
-remove_theme_support( 'wc-product-gallery-lightbox' );
-remove_theme_support( 'wc-product-gallery-slider' );
+function remove_gallery_and_product_images() {
+if ( is_product() ) {
+    remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_images', 20 );
+    }
 }
+add_action('loop_start', 'remove_gallery_and_product_images');
