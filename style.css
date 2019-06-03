@@ -966,6 +966,17 @@ and open the template in the editor.
     Created on : Jun 3, 2019, 7:25:00 AM
     Author     : steph
 */
+.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+	float: right;
+	width: 48%;
+	clear: none;
+	display: none;
+}
+
+.single-product .related {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
