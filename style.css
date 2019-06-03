@@ -784,9 +784,8 @@ and open the template in the editor.
 	width: 95%;
 }
 
-.page-template-elementor_header_footer
-.site-content {
-	margin: 0 auto 0 auto;
+.page-template-elementor_header_footer .site-content {
+	margin: 0 auto 0 auto !important;
 }
 
 .site-main {
@@ -851,7 +850,7 @@ and open the template in the editor.
 }
 
 .entry-content {
-	background: #F7EEE2;
+	background: #f3e4d1b8;
 	padding: 3em;
 }
 
