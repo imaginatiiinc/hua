@@ -784,6 +784,11 @@ and open the template in the editor.
 	width: 95%;
 }
 
+.page-template-elementor_header_footer
+.site-content {
+	margin: 0 auto 0 auto;
+}
+
 .site-main {
 	width: 66%;
 	float: left;
