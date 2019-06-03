@@ -17,3 +17,16 @@ and open the template in the editor.
 
 
 .single-product .related {display:none;}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    display:none;
+}
+
+.single-product .entry-content {
+    background:#fff;
+    
+}
+
+.single-product .onsale {
+    display:none;
+}
