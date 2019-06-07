@@ -213,3 +213,12 @@ if ( is_product() ) {
 }
 add_action('loop_start', 'remove_gallery_and_product_images');
 
+// Content Views Pro - Live Filter - Show title of post (instead of ID) of custom field
+add_filter( 'pt_cv_lf_ctf_text', 'cvp_theme_lf_ctf_text', 100, 2 );
+function cvp_theme_lf_ctf_text( $args, $field_name ) {
+    if ( in_array( $field_name, array( 'associated_programs', 'instructor', 'associated_programs' ) ) ) {
+        $serie = get_post( intval( $args ) );
+        $args  = $serie->post_title;
+    }
+    return $args;
+}
