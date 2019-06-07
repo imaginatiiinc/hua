@@ -911,6 +911,12 @@ and open the template in the editor.
 	margin: 1em;
 }
 
+@media screen and (max-width: 1200px) {
+	#secondary {
+		padding: 2em;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.site-main {
 		width: 100%;

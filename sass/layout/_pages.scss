@@ -164,6 +164,11 @@ and open the template in the editor.
 }
 
 
+@media screen and (max-width: 1200px) {
+
+#secondary {padding:2em;}
+}
+
 
 @media screen and (max-width: 900px) {
   .site-main {
@@ -174,3 +179,4 @@ and open the template in the editor.
 
 #secondary {width:100%; float: none;margin:0 0 2% 0;}
 }
+
