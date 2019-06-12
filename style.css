@@ -799,7 +799,7 @@ and open the template in the editor.
 	float: left;
 }
 
-.page-template-fullwidth .site-main {
+.page-template-fullwidth .site-main, .single-program .site-main {
 	width: 100%;
 	float: none;
 }
