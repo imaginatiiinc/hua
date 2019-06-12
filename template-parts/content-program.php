@@ -21,11 +21,12 @@
 			'after'  => '</div>',
 		) );
 		?>
+            
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
-                    <h2>Courses In This Program</h2>
+                    <!--h2>Courses In This Program</h2>
                                             <?php 
 
 						/*
