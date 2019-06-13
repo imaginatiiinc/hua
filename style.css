@@ -517,6 +517,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+.button,
 button,
 input[type="button"],
 input[type="reset"],
@@ -524,6 +525,7 @@ input[type="submit"] {
 	border: 0px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 0px;
+	text-decoration: none;
 	background: #F2A244;
 	color: rgba(0, 0, 0, 0.8);
 	font-size: 12px;
@@ -532,6 +534,7 @@ input[type="submit"] {
 	padding: .6em 1em .4em;
 }
 
+.button:hover,
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -540,7 +543,9 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+.button:active, .button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -548,6 +553,24 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
+}
+
+.big-button {
+	color: #2a0941;
+	font-size: 2rem;
+	margin: 1.5rem auto 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	max-width: 400px;
+}
+
+.big-button:visited {
+	color: #2a0941;
+}
+
+.big-button:hover {
+	color: #000;
 }
 
 input[type="text"],
@@ -802,6 +825,11 @@ and open the template in the editor.
 .page-template-fullwidth .site-main, .single-program .site-main {
 	width: 100%;
 	float: none;
+}
+
+.single-program .site-main {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .page-template-fullwidth .entry-title {

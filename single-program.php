@@ -19,7 +19,6 @@ get_header();
      
   </header>
 		<main id="main" class="site-main">
-
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -36,7 +35,8 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
+		</main><!-- #main -->                    <a class="button big-button" href="<?php echo get_home_url(); ?>/academics/programs">View all programs</a>
+
 	</div><!-- #primary -->
 
 <?php
