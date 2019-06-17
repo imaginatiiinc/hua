@@ -910,7 +910,7 @@ and open the template in the editor.
 }
 
 #custom-bg {
-	height: 50vh;
+	height: 100vh;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
