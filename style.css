@@ -894,7 +894,7 @@ and open the template in the editor.
 }
 
 .entry-content {
-	background: #f3e4d1b8;
+	background: rgba(243, 228, 209, 0.82);
 	padding: 3em;
 }
 
