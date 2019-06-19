@@ -11,3 +11,29 @@ and open the template in the editor.
 .single-course .entry-content  {
     margin: 3em auto;
 }
+
+
+.pt-cv-title {
+    padding:6% 1em 0 1em !important;
+}
+
+.pt-cv-content {
+    padding: 1em !important;
+}
+
+@media screen and (min-width: 992px) {
+.page-id-109 .pt-cv-colsys .pt-cv-content-item {
+   
+    max-height: 300px;
+    margin-bottom: 1em;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+     .pt-cv-same-height .pt-cv-2-col .pt-cv-thumbnail {
+    
+    width: 100%;
+     } 
+    
+}
