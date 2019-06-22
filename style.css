@@ -967,6 +967,10 @@ and open the template in the editor.
 	}
 }
 
+.page-id-121 .site {
+	background: url("../../../wp-content/themes/hua/img/holi.jpg") center center/cover no-repeat;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1057,7 +1061,6 @@ and open the template in the editor.
 
 .single-people .site {
 	background: url("../../../wp-content/themes/hua/img/om.png");
-	background-color: linear-gradient(90deg, #280a41 0%, #651366 100%);
 }
 
 .flex-container {
