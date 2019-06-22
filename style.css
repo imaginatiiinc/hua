@@ -945,6 +945,12 @@ and open the template in the editor.
 	}
 }
 
+@media screen and (max-width: 1048px) {
+	.eael-tabs-nav {
+		font-size: 10px;
+	}
+}
+
 @media screen and (max-width: 900px) {
 	.site-main {
 		width: 100%;
@@ -954,6 +960,12 @@ and open the template in the editor.
 		width: 100%;
 		float: none;
 		margin: 0 0 2% 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.eael-tabs-nav {
+		font-size: 15px;
 	}
 }
 
