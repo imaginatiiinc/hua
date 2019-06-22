@@ -24,6 +24,19 @@
         <div class="flex-container">
             <div class="staff-meta">
             <?php hua_post_thumbnail(); ?>
+                <?php if( get_field('job_title') ): ?>
+                    <h3 class="hua-title"><?php the_field('job_title'); ?></h3>
+                <?php endif; ?>
+                <?php if( get_field('email') ): ?>
+                    <h3><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></h3>
+                <?php endif; ?>
+                <?php if( get_field('phone_number') ): ?>
+                    <h3><a href="<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></h3>
+                <?php endif; ?>
+                <?php if( get_field('website') ): ?>
+                    <h3><a href="<?php the_field('website'); ?>">Personal Website</a></h3>
+                <?php endif; ?>
+  
             </div>
             <div class="entry-content">
                     <?php
@@ -34,6 +47,7 @@
                             'after'  => '</div>',
                     ) );
                     ?>
+                <a class="button" href="<?php echo get_site_url(); ?>/about/team">View our whole team</a>
             </div><!-- .entry-content -->
         </div>
 	<?php if ( get_edit_post_link() ) : ?>

@@ -527,9 +527,7 @@ input[type="submit"] {
 	border-radius: 0px;
 	text-decoration: none;
 	background: #F2A244;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
+	color: rgba(0, 0, 0, 0.8) !important;
 	line-height: 1;
 	padding: .6em 1em .4em;
 }
@@ -1091,6 +1089,35 @@ and open the template in the editor.
 	    flex: 70%;
 	font-size: 19px;
 	line-height: 1.8em;
+}
+
+.staff-meta h3 {
+	margin: 0px 15px 1em 0;
+	text-align: right;
+}
+
+.hua-title {
+	font-size: 2em;
+}
+
+@media (max-width: 900px) {
+	.type-people .entry-content {
+		margin: 0;
+		-ms-flex: 70%;
+		    flex: 70%;
+		font-size: 16px;
+		line-height: 1.8em;
+		padding: 2em;
+	}
+}
+
+@media (max-width: 650px) {
+	.flex-container {
+		display: block;
+	}
+	.staff-meta h3 {
+		text-align: center;
+	}
 }
 
 /*--------------------------------------------------------------
