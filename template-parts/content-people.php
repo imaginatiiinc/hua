@@ -19,20 +19,23 @@
                 <?php the_field('credential_letters'); ?>
                 </h1>
 	</header><!-- .entry-header -->
+        
+        
+        <div class="flex-container">
+            <div class="staff-meta">
+            <?php hua_post_thumbnail(); ?>
+            </div>
+            <div class="entry-content">
+                    <?php
+                    the_content();
 
-	<?php hua_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hua' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
+                    wp_link_pages( array(
+                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hua' ),
+                            'after'  => '</div>',
+                    ) );
+                    ?>
+            </div><!-- .entry-content -->
+        </div>
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

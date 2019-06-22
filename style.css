@@ -1005,7 +1005,7 @@ and open the template in the editor.
 }
 */
 /*--------------------------------------------------------------
-# Header
+# Programs pages
 --------------------------------------------------------------*/
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1039,6 +1039,58 @@ and open the template in the editor.
 	.pt-cv-same-height .pt-cv-2-col .pt-cv-thumbnail {
 		width: 100%;
 	}
+}
+
+/*--------------------------------------------------------------
+# Faculty Pages
+--------------------------------------------------------------*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 21, 2019, 11:58:10 PM
+    Author     : steph
+*/
+.single-people .site-main {
+	width: 100%;
+}
+
+.single-people .site {
+	background: url("../../../wp-content/themes/hua/img/om.png");
+	background-color: linear-gradient(90deg, #280a41 0%, #651366 100%);
+}
+
+.flex-container {
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.type-people .entry-header {
+	width: 100%;
+}
+
+.type-people .entry-title {
+	margin-top: 1em;
+	/*color:#F7CB8A;*/
+}
+
+.type-people .post-thumbnail {
+	width: 100%;
+	max-width: 100%;
+	-ms-flex: 30%;
+	    flex: 30%;
+}
+
+.type-people .entry-content {
+	margin: 0;
+	-ms-flex: 70%;
+	    flex: 70%;
+	font-size: 19px;
+	line-height: 1.8em;
 }
 
 /*--------------------------------------------------------------
