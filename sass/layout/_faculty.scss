@@ -57,6 +57,11 @@ and open the template in the editor.
     font-size:2em;
 }
 
+.single-people .post-thumbnail img {
+    width: 100%;
+}
+
+
 @media (max-width:900px) {
     
  .type-people .entry-content {
