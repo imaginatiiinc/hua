@@ -1063,10 +1063,6 @@ and open the template in the editor.
 	width: 100%;
 }
 
-.single-people .site {
-	background: url("../../../wp-content/themes/hua/img/om.png");
-}
-
 .flex-container {
 	display: -ms-flexbox;
 	display: flex;
