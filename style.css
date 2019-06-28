@@ -799,6 +799,10 @@ and open the template in the editor.
     Created on : May 21, 2019, 1:22:26 AM
     Author     : steph
 */
+.site {
+	background: url("../../../wp-content/themes/hua/img/om.png");
+}
+
 .site-content {
 	max-width: 1500px;
 	margin: 0 auto 2% auto;
