@@ -1379,6 +1379,16 @@ and open the template in the editor.
 	display: none;
 }
 
+.single-post #secondary ul a {
+	font-weight: bold;
+}
+
+.post-date {
+	display: block;
+	font-size: 1rem;
+	margin-bottom: 2em;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
