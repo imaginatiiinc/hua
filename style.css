@@ -1375,6 +1375,10 @@ and open the template in the editor.
 	margin: 0 0 1.5em;
 }
 
+.single-post .post-thumbnail {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
