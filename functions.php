@@ -222,3 +222,15 @@ function cvp_theme_lf_ctf_text( $args, $field_name ) {
     }
     return $args;
 }
+
+
+function modify_gettext( $translated_text, $text, $domain ) {
+    switch ( $translated_text ) {
+        case 'This product is currently out of stock and unavailable.' :
+            $translated_text = __( 'Registration for this course is not open yet', 'woocommerce' );
+            break;
+    }
+    return $translated_text;
+}
+
+add_filter( 'gettext', 'modify_gettext', 20, 3 );
